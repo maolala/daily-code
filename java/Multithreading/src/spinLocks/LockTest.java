@@ -3,7 +3,7 @@ package spinLocks;
 /*
  * 通过继承不同的父类来测试锁算法
  */
-public class LockTest extends EmptyLock {
+public class LockTest extends BackoffLock {
     public static final int NACCOUNTS = 100;
     public static double INITIAL_BALANCE = 1000;
     

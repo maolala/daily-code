@@ -7,7 +7,8 @@ public class TTASLock {
     
     public void lock() {
         while (true) {
-            while (state.get()) {;
+            while (state.get()) {
+                ;
             }
             if (! state.getAndSet(true)) {
                 return;
